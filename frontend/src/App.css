@@ -1,18 +1,10 @@
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
-}
-
 .container {
-  width: 400px;
+  width: 380px;
   margin: 80px auto;
   padding: 30px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -24,39 +16,44 @@ h2 {
 input {
   width: 100%;
   padding: 12px;
-  margin-top: 12px;
+  margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 8px;
-  font-size: 15px;
   box-sizing: border-box;
 }
 
 input:focus {
   outline: none;
-  border-color: #4f46e5;
+  border-color: #7c5cff;
 }
 
 button {
   width: 100%;
   padding: 12px;
-  margin-top: 20px;
-  background: #4f46e5;
+  background: #7c5cff;
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 button:hover {
-  background: #3730a3;
+  background: #6548e6;
 }
 
-.home {
+p {
   text-align: center;
-  margin-top: 120px;
 }
 
-.home h1 {
-  color: #4f46e5;
+a {
+  color: #7c5cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+body {
+  background: #1e1e2f;
 }
