@@ -67,10 +67,11 @@ const handleSubmit = async () => {
       <br /><br />
 
       <input
-        type="password"
-        placeholder="Password"
-        onchange={handleChange}
-      />
+       type="password"
+       name="password"
+       placeholder="Password"
+       onChange={handleChange}
+/>
 
       <br /><br />
 

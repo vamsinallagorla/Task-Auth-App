@@ -45,7 +45,11 @@ router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
+    console.log("Email Entered:", email);
+
     const user = await User.findOne({ email });
+
+    console.log("User Found:", user);
 
     if (!user) {
       return res.status(401).json({
@@ -57,6 +61,8 @@ router.post("/login", async (req, res) => {
       password,
       user.password
     );
+
+    console.log("Password Match:", isMatch);
 
     if (!isMatch) {
       return res.status(401).json({
@@ -76,6 +82,7 @@ router.post("/login", async (req, res) => {
     });
 
   } catch (error) {
+    console.log(error);
     res.status(500).json({
       message: "Server Error",
     });
